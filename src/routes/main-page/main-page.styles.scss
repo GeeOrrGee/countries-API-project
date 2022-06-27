@@ -1,0 +1,15 @@
+main {
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(3rem, 3vw, 7em);
+    align-items: center;
+
+    .countries-preview-container {
+        display: grid;
+        grid-template-columns: repeat(4, 25rem);
+        gap: clamp(3rem, 4vw, 8rem);
+        max-width: 100%;
+    }
+}
