@@ -1,7 +1,7 @@
 import './country-preview.styles.scss';
 
 const CountryPreview = ({ country }) => {
-    console.log(country);
+    // console.log(country);
 
     const { flags, name, region, population, capital } = country;
     return (

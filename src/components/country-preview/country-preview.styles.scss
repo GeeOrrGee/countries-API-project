@@ -2,7 +2,14 @@ figure {
     max-height: 32rem;
     box-shadow: 0 1rem 1.5rem 1rem rgb(0, 0, 0, 0.02);
     border-radius: 0.5rem;
+    transition: all 0.3s;
     background-color: #fff;
+    &:hover,
+    &:active {
+        transform: translateY(-3%);
+        box-shadow: 0 1rem 1.6rem 1rem rgb(0, 0, 0, 0.05);
+        cursor: pointer;
+    }
     .country-img-container {
         height: 50%;
         width: 100%;
