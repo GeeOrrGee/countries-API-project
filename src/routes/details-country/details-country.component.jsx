@@ -7,8 +7,8 @@ import { MainDataContext } from '../../context/Main-data.context';
 const CountryDetails = () => {
     const { countryName } = useParams();
     const { data } = useContext(MainDataContext);
+    console.log(data);
 
-    console.log(data.find((country) => country.name.common === countryName));
     const {
         name,
         population,
