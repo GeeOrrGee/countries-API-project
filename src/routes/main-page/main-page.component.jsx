@@ -8,9 +8,6 @@ const MainPage = () => {
     const [searchField, setSearchField] = useState('');
     const [currentData, setCurrentData] = useState(data);
     const [selectValue, setSelectValue] = useState('');
-    useEffect(() => {
-        setCurrentData(data);
-    }, [data]);
 
     useEffect(() => {
         const filteredCountries = data.filter((country) =>
@@ -40,7 +37,7 @@ const MainPage = () => {
 
     // useEffect(() => {}, [data, selectValue]);
     return (
-        <main>
+        <section>
             <form className='search-inputs-container' onSubmit={handleSubmit}>
                 <input onChange={onSearchChangeHandler} />
                 <select
@@ -55,12 +52,12 @@ const MainPage = () => {
                     <option value={'Oceania'}>Oceania</option>
                 </select>
             </form>
-            <section className='countries-preview-container'>
+            <div className='countries-preview-container'>
                 {currentData.map((country) => (
                     <CountryPreview country={country} />
                 ))}
-            </section>
-        </main>
+            </div>
+        </section>
     );
 };
 

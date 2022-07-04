@@ -1,15 +1,23 @@
-main {
+section {
     width: 90vw;
     margin: 2rem auto;
     display: flex;
     flex-direction: column;
     gap: clamp(3rem, 3vw, 7em);
     align-items: center;
+    justify-content: center;
+    padding-top: clamp(10rem, 12vh, 14rem);
+    form {
+        display: flex;
+        justify-content: space-between;
+        width: 85%;
+    }
 
     .countries-preview-container {
         display: grid;
-        grid-template-columns: repeat(4, 25rem);
+        grid-template-columns: repeat(4, 1fr);
         gap: clamp(3rem, 4vw, 8rem);
-        max-width: 100%;
+        width: 85%;
+        margin-top: 2rem;
     }
 }
